@@ -14,7 +14,7 @@ module ActiveResource::Associations
   # === Options
   # [:class_name]
   #   Specify the class name of the association. This class name would
-  #   be used for resolving the association class. 
+  #   be used for resolving the association class.
   #
   # ==== Example for [:class_name] - option
   # GET /posts/123.xml delivers following response body:
@@ -39,7 +39,7 @@ module ActiveResource::Associations
   # === Options
   # [:class_name]
   #   Specify the class name of the association. This class name would
-  #   be used for resolving the association class. 
+  #   be used for resolving the association class.
   #
   # ==== Example for [:class_name] - option
   # GET /posts/123.xml delivers following response body:
@@ -59,7 +59,7 @@ module ActiveResource::Associations
   end
 
   # Specifies a one-to-one association with another class. This class should only be used
-  # if this class contains the foreign key. 
+  # if this class contains the foreign key.
   #
   # Methods will be added for retrieval and query for a single associated object, for which
   # this object holds an id:
@@ -68,7 +68,7 @@ module ActiveResource::Associations
   #   Returns the associated object. +nil+ is returned if the foreign key is +nil+.
   #   Throws a ActiveResource::ResourceNotFound exception if the foreign key is not +nil+
   #   and the resource is not found.
-  # 
+  #
   # (+association+ is replaced with the symbol passed as the first argument, so
   # <tt>belongs_to :post</tt> would add among others <tt>post.nil?</tt>.
   #
@@ -80,7 +80,7 @@ module ActiveResource::Associations
   #
   # === Options
   # [:class_name]
-  #   Specify the class name for the association. Use it only if that name canÄt be inferred from association name.
+  #   Specify the class name for the association. Use it only if that name can't be inferred from association name.
   #   So <tt>belongs_to :post</tt> will by default be linked to the Post class, but if the real class name is Article,
   #   you'll have to specify it with whis option.
   # [:foreign_key]
